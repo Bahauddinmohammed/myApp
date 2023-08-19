@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() { }
+
+  openLinkNewTab() {
+    const url = 'https://chat.openai.com/';
+    window.open(url,'ChatGPT')
+  }
 
 }
+
